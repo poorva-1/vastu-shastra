@@ -1,0 +1,302 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+@-webkit-keyframes flip {
+    0% {
+      -webkit-transform: perspective(600px) rotateY(0deg);
+      transform: perspective(600px) rotateY(0deg);
+  }
+  20% {
+      background: #002e5b;
+  }
+  29.9% {
+      background: #002e5b;
+  }
+  30% {
+      -webkit-transform: perspective(200px) rotateY(-90deg);
+      transform: perspective(200px) rotateY(-90deg);
+      background: #002e5b;
+  }
+  54.999% {
+      opacity: 1;
+  }
+  55% {
+      opacity: 0;
+  }
+  60% {
+      -webkit-transform: perspective(200px) rotateY(-180deg);
+      transform: perspective(200px) rotateY(-180deg);
+      background: #002e5b;
+  }
+  100% {
+      -webkit-transform: perspective(200px) rotateY(-180deg);
+      transform: perspective(200px) rotateY(-180deg);
+      background: #002e5b;
+  }
+}
+
+@keyframes flip {
+0% {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+  transform: perspective(600px) rotateY(0deg);
+}
+20% {
+  background: #002e5b;
+}
+29.9% {
+  background: #002e5b;
+}
+30% {
+  -webkit-transform: perspective(200px) rotateY(-90deg);
+  transform: perspective(200px) rotateY(-90deg);
+  background: #002e5b;
+}
+54.999% {
+  opacity: 1;
+}
+55% {
+  opacity: 0;
+}
+60% {
+  -webkit-transform: perspective(200px) rotateY(-180deg);
+  transform: perspective(200px) rotateY(-180deg);
+  background: #002e5b;
+}
+100% {
+  -webkit-transform: perspective(200px) rotateY(-180deg);
+  transform: perspective(200px) rotateY(-180deg);
+  background: #002e5b;
+}
+}
+#loader-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #002e5b;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+}
+
+.navbar-brand{
+   
+    
+    margin-left: -10px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .navbar-brand{
+        width:20px;
+        height: 20px;
+        margin-left: 0px auto;
+    }
+
+}
+@media (min-width: 320) and (max-width: 585px) {
+  .navbar-brand{
+    width:20px;
+    height: 20px;
+  }
+}
+nav > .nav.nav-tabs{
+
+    border: none;
+      color:#fff;
+      background:#272e38;
+      border-radius:0;
+  
+  }
+  nav > div a.nav-item.nav-link,
+  nav > div a.nav-item.nav-link.active
+  {
+    border: none;
+      padding: 18px 25px;
+      color:#fff;
+      background:#272e38;
+      border-radius:0;
+  }
+  
+  nav > div a.nav-item.nav-link.active:after
+   {
+    content: "";
+    position: relative;
+    bottom: -60px;
+    left: -10%;
+    border: 15px solid transparent;
+    border-top-color: #e74c3c ;
+  }
+  .tab-content{
+    background: #fdfdfd;
+      line-height: 25px;
+      border: 1px solid #ddd;
+      border-top:5px solid #e74c3c;
+      border-bottom:5px solid #e74c3c;
+      padding:30px 25px;
+  }
+  
+  nav > div a.nav-item.nav-link:hover,
+  nav > div a.nav-item.nav-link:focus
+  {
+    border: none;
+      background: #e74c3c;
+      color:#fff;
+      border-radius:0;
+      transition:background 0.20s linear;
+  }
+
+  #ads {
+    margin: 30px 0 30px 0;
+   
+}
+
+#ads .card-notify-badge {
+        position: absolute;
+        left: -10px;
+        top: -20px;
+        background: #f2d900;
+        text-align: center;
+        border-radius: 30px 30px 30px 30px; 
+        color: #000;
+        padding: 5px 10px;
+        font-size: 14px;
+
+    }
+
+#ads .card-notify-year {
+        position: absolute;
+        right: -10px;
+        top: -20px;
+        background: #ff4444;
+        border-radius: 50%;
+        text-align: center;
+        color: #fff;      
+        font-size: 14px;      
+        width: 50px;
+        height: 50px;    
+        padding: 15px 0 0 0;
+}
+
+
+#ads .card-detail-badge {      
+        background:#ffad18;
+        text-align: center;
+        border-radius: 30px 30px 30px 30px;
+        color: #000;
+        padding: 5px 10px;
+        font-size: 14px;        
+    }
+
+   
+
+#ads .card:hover {
+            background: #fff;
+            box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+#ads .card-image-overlay {
+        font-size: 20px;
+        
+    }
+
+
+#ads .card-image-overlay span {
+            display: inline-block;   
+            position: sticky;  
+
+        }
+
+
+#ads .ad-btn {
+        text-transform: uppercase;
+        width: 150px;
+        height: 40px;
+        border-radius: 80px;
+        font-size: 16px;
+        line-height: 35px;
+        text-align: center;
+        border: 3px solid #ffad18;
+        display: block;
+        text-decoration: none;
+        margin: 20px auto 1px auto;
+        color: #000;
+        overflow: hidden;        
+        position: relative;
+        background-color:#ffad18;
+    }
+
+#ads .ad-btn:hover {
+            background-color: #ffad18;
+            color: #1e1717;
+            border: 2px solid#ffad18;
+            background: transparent;
+            transition: all 0.3s ease;
+            box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+        }
+
+#ads .ad-title h5 {
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    #slider-animation{max-height:550px;}
+    .heading-box h2{ width:100%; color: red; }
+    h2, p{color:#fff;}
+    .carousel-item img{width:100%;}
+    .text-box {
+      position: absolute;
+      top: 50%;
+      left: 15%;
+      right: 15%;
+      color: #000;
+      transform: translateY(-50%);
+    }
+    .social-card-header{
+      position: relative;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      height: 96px;
+  }
+  .social-card-header i {
+      font-size: 32px;
+      color:#FFF;
+  }
+  .bg-facebook {
+      background-color:#3b5998;
+  }
+  .text-facebook {
+      color:#3b5998;
+  }
+  .bg-google-plus{
+      background-color:#dd4b39;
+  }
+  .text-google-plus {
+      color:#dd4b39;
+  }
+  .bg-twitter {
+      background-color:#1da1f2;
+  }
+  .text-twitter {
+      color:#1da1f2;
+  }
+  .bg-pinterest {
+      background-color:#bd081c;
+  }
+  .text-pinterest {
+      color:#bd081c;
+  }
+  .share:hover {
+          text-decoration: none;
+      opacity: 0.8;
+  }

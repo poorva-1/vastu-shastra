@@ -1,0 +1,97 @@
+.topnav a:hover {
+    color: brown;
+}
+.nav-link:hover{
+	border-bottom: 3px solid red;
+	
+}
+
+.show-on-hover:hover > ul.dropdown-menu {
+	display: block; 
+	text-align: justify;
+	padding: 5px;
+	border-bottom: 3px solid red;
+
+}
+.nav-link {
+    width: 140px;
+    text-align: center;
+	padding: 7px;
+    font-size: 1.2em;
+	color:black;
+	
+
+}
+@media (min-width: 320px) and (max-width: 786px) {
+    .nav-link {
+        width: 100px;
+        text-align: left;
+        font-size: 1.2em;
+        color:black;
+       
+    }
+    .show-on-hover:hover > ul.dropdown-menu {
+        display: block; 
+    }
+    .topnav a:hover {
+    border-bottom: 3px solid red;
+    color: brown;
+}
+}
+
+
+
+/*
+scroll*/
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+    background-color: #777777;
+	color: #eeeeee;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	right: 30px;
+	bottom: 30px;
+	padding-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+	background-color: #888888;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+	opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+	line-height: inherit;
+}
+.heading-box h2{ width:100%; color: red;
+ }
+.text-box {
+	position: absolute;
+	top: 30%;
+	left: 15%;
+	right: 15%;
+	color: #fff;
+	text-align: center;
+	transform: translateY(-50%);
+	font-size: 3vw;
+}
+
+p{
+	color:black;
+}
